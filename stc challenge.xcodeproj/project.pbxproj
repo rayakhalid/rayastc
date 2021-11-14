@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EFECDAF8274171DE00B05582 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDAF7274171DE00B05582 /* AppDelegate.swift */; };
+		EFECDAFA274171DE00B05582 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDAF9274171DE00B05582 /* SceneDelegate.swift */; };
+		EFECDAFC274171DE00B05582 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDAFB274171DE00B05582 /* ViewController.swift */; };
+		EFECDAFF274171DF00B05582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFECDAFD274171DE00B05582 /* Main.storyboard */; };
+		EFECDB01274171E200B05582 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFECDB00274171E200B05582 /* Assets.xcassets */; };
+		EFECDB04274171E200B05582 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFECDB02274171E200B05582 /* LaunchScreen.storyboard */; };
+		EFECDB0F274171E300B05582 /* stc_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB0E274171E300B05582 /* stc_challengeTests.swift */; };
+		EFECDB19274171E300B05582 /* stc_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB18274171E300B05582 /* stc_challengeUITests.swift */; };
+		EFECDB1B274171E300B05582 /* stc_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB1A274171E300B05582 /* stc_challengeUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFECDB0B274171E300B05582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFECDAEC274171DE00B05582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFECDAF3274171DE00B05582;
+			remoteInfo = "stc challenge";
+		};
+		EFECDB15274171E300B05582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFECDAEC274171DE00B05582 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFECDAF3274171DE00B05582;
+			remoteInfo = "stc challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EFECDAF4274171DE00B05582 /* stc challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "stc challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFECDAF7274171DE00B05582 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFECDAF9274171DE00B05582 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFECDAFB274171DE00B05582 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFECDAFE274171DE00B05582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFECDB00274171E200B05582 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFECDB03274171E200B05582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFECDB05274171E200B05582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFECDB0A274171E300B05582 /* stc challengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stc challengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFECDB0E274171E300B05582 /* stc_challengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stc_challengeTests.swift; sourceTree = "<group>"; };
+		EFECDB14274171E300B05582 /* stc challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stc challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFECDB18274171E300B05582 /* stc_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stc_challengeUITests.swift; sourceTree = "<group>"; };
+		EFECDB1A274171E300B05582 /* stc_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stc_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFECDAF1274171DE00B05582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFECDB07274171E300B05582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFECDB11274171E300B05582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EFECDAEB274171DE00B05582 = {
+			isa = PBXGroup;
+			children = (
+				EFECDAF6274171DE00B05582 /* stc challenge */,
+				EFECDB0D274171E300B05582 /* stc challengeTests */,
+				EFECDB17274171E300B05582 /* stc challengeUITests */,
+				EFECDAF5274171DE00B05582 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EFECDAF5274171DE00B05582 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFECDAF4274171DE00B05582 /* stc challenge.app */,
+				EFECDB0A274171E300B05582 /* stc challengeTests.xctest */,
+				EFECDB14274171E300B05582 /* stc challengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFECDAF6274171DE00B05582 /* stc challenge */ = {
+			isa = PBXGroup;
+			children = (
+				EFECDAF7274171DE00B05582 /* AppDelegate.swift */,
+				EFECDAF9274171DE00B05582 /* SceneDelegate.swift */,
+				EFECDAFB274171DE00B05582 /* ViewController.swift */,
+				EFECDAFD274171DE00B05582 /* Main.storyboard */,
+				EFECDB00274171E200B05582 /* Assets.xcassets */,
+				EFECDB02274171E200B05582 /* LaunchScreen.storyboard */,
+				EFECDB05274171E200B05582 /* Info.plist */,
+			);
+			path = "stc challenge";
+			sourceTree = "<group>";
+		};
+		EFECDB0D274171E300B05582 /* stc challengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFECDB0E274171E300B05582 /* stc_challengeTests.swift */,
+			);
+			path = "stc challengeTests";
+			sourceTree = "<group>";
+		};
+		EFECDB17274171E300B05582 /* stc challengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFECDB18274171E300B05582 /* stc_challengeUITests.swift */,
+				EFECDB1A274171E300B05582 /* stc_challengeUITestsLaunchTests.swift */,
+			);
+			path = "stc challengeUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFECDAF3274171DE00B05582 /* stc challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFECDB1E274171E300B05582 /* Build configuration list for PBXNativeTarget "stc challenge" */;
+			buildPhases = (
+				EFECDAF0274171DE00B05582 /* Sources */,
+				EFECDAF1274171DE00B05582 /* Frameworks */,
+				EFECDAF2274171DE00B05582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "stc challenge";
+			productName = "stc challenge";
+			productReference = EFECDAF4274171DE00B05582 /* stc challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFECDB09274171E300B05582 /* stc challengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFECDB21274171E300B05582 /* Build configuration list for PBXNativeTarget "stc challengeTests" */;
+			buildPhases = (
+				EFECDB06274171E300B05582 /* Sources */,
+				EFECDB07274171E300B05582 /* Frameworks */,
+				EFECDB08274171E300B05582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFECDB0C274171E300B05582 /* PBXTargetDependency */,
+			);
+			name = "stc challengeTests";
+			productName = "stc challengeTests";
+			productReference = EFECDB0A274171E300B05582 /* stc challengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFECDB13274171E300B05582 /* stc challengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFECDB24274171E300B05582 /* Build configuration list for PBXNativeTarget "stc challengeUITests" */;
+			buildPhases = (
+				EFECDB10274171E300B05582 /* Sources */,
+				EFECDB11274171E300B05582 /* Frameworks */,
+				EFECDB12274171E300B05582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFECDB16274171E300B05582 /* PBXTargetDependency */,
+			);
+			name = "stc challengeUITests";
+			productName = "stc challengeUITests";
+			productReference = EFECDB14274171E300B05582 /* stc challengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFECDAEC274171DE00B05582 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EFECDAF3274171DE00B05582 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					EFECDB09274171E300B05582 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EFECDAF3274171DE00B05582;
+					};
+					EFECDB13274171E300B05582 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EFECDAF3274171DE00B05582;
+					};
+				};
+			};
+			buildConfigurationList = EFECDAEF274171DE00B05582 /* Build configuration list for PBXProject "stc challenge" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFECDAEB274171DE00B05582;
+			productRefGroup = EFECDAF5274171DE00B05582 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFECDAF3274171DE00B05582 /* stc challenge */,
+				EFECDB09274171E300B05582 /* stc challengeTests */,
+				EFECDB13274171E300B05582 /* stc challengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFECDAF2274171DE00B05582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFECDB04274171E200B05582 /* LaunchScreen.storyboard in Resources */,
+				EFECDB01274171E200B05582 /* Assets.xcassets in Resources */,
+				EFECDAFF274171DF00B05582 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFECDB08274171E300B05582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFECDB12274171E300B05582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFECDAF0274171DE00B05582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFECDAFC274171DE00B05582 /* ViewController.swift in Sources */,
+				EFECDAF8274171DE00B05582 /* AppDelegate.swift in Sources */,
+				EFECDAFA274171DE00B05582 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFECDB06274171E300B05582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFECDB0F274171E300B05582 /* stc_challengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFECDB10274171E300B05582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFECDB19274171E300B05582 /* stc_challengeUITests.swift in Sources */,
+				EFECDB1B274171E300B05582 /* stc_challengeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFECDB0C274171E300B05582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFECDAF3274171DE00B05582 /* stc challenge */;
+			targetProxy = EFECDB0B274171E300B05582 /* PBXContainerItemProxy */;
+		};
+		EFECDB16274171E300B05582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFECDAF3274171DE00B05582 /* stc challenge */;
+			targetProxy = EFECDB15274171E300B05582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFECDAFD274171DE00B05582 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFECDAFE274171DE00B05582 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFECDB02274171E200B05582 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFECDB03274171E200B05582 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFECDB1C274171E300B05582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFECDB1D274171E300B05582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFECDB1F274171E300B05582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56ND8JBGMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "stc challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Raya.stc-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFECDB20274171E300B05582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56ND8JBGMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "stc challenge/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Raya.stc-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFECDB22274171E300B05582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56ND8JBGMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Raya.stc-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stc challenge.app/stc challenge";
+			};
+			name = Debug;
+		};
+		EFECDB23274171E300B05582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56ND8JBGMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Raya.stc-challengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/stc challenge.app/stc challenge";
+			};
+			name = Release;
+		};
+		EFECDB25274171E300B05582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56ND8JBGMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Raya.stc-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "stc challenge";
+			};
+			name = Debug;
+		};
+		EFECDB26274171E300B05582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 56ND8JBGMB;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Raya.stc-challengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "stc challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFECDAEF274171DE00B05582 /* Build configuration list for PBXProject "stc challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFECDB1C274171E300B05582 /* Debug */,
+				EFECDB1D274171E300B05582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFECDB1E274171E300B05582 /* Build configuration list for PBXNativeTarget "stc challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFECDB1F274171E300B05582 /* Debug */,
+				EFECDB20274171E300B05582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFECDB21274171E300B05582 /* Build configuration list for PBXNativeTarget "stc challengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFECDB22274171E300B05582 /* Debug */,
+				EFECDB23274171E300B05582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFECDB24274171E300B05582 /* Build configuration list for PBXNativeTarget "stc challengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFECDB25274171E300B05582 /* Debug */,
+				EFECDB26274171E300B05582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFECDAEC274171DE00B05582 /* Project object */;
+}
