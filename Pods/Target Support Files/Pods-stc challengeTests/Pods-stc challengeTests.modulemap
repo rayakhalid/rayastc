@@ -1,0 +1,6 @@
+framework module Pods_stc_challengeTests {
+  umbrella header "Pods-stc challengeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

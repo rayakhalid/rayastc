@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-stc challenge/Pods-stc challenge-frameworks.sh
+${BUILT_PRODUCTS_DIR}/BaseAPI/BaseAPI.framework
+${BUILT_PRODUCTS_DIR}/GithubAPI/GithubAPI.framework
+${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework

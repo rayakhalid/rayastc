@@ -1,0 +1,24 @@
+PODS:
+  - BaseAPI (0.1.12)
+  - GithubAPI (0.0.11):
+    - BaseAPI
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - GithubAPI
+  - TextFieldEffects
+
+SPEC REPOS:
+  trunk:
+    - BaseAPI
+    - GithubAPI
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  BaseAPI: 84c9b49d75b8be1e9d7facd66bd14082eee499e4
+  GithubAPI: 706761f300a8a1c5c30ad85016ac366a5dbb058d
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: ecaacb3b73c19b14ec26bcb882de6e38cea5ecc7
+
+COCOAPODS: 1.11.2
