@@ -27,7 +27,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.UsersTableView.dataSource = self
         UsersTableView.isUserInteractionEnabled = true
         UsersTableView.allowsSelection = true
-
         loadData()
            }
    
