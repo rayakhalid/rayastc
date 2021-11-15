@@ -18,7 +18,7 @@ class userselectViewController: UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var ownername: UITextField!
     var loginname = ""
     @IBOutlet weak var username: UITextField!
-    @IBOutlet weak var descreption: UITextField!
+    @IBOutlet weak var descreption: UITextView!
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,11 +77,11 @@ print(loginname)
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "reposTableViewCell") as! reposTableViewCell
         cell.reponame.text = repoArray[indexPath.row].namea
-        cell.repodesc.text = repoArray[indexPath.row].descreption
+        cell.descreption.text = repoArray[indexPath.row].descreption
          cell.licensename.text = repoArray[indexPath.row].licenseName
         
         cell.reponame.isEnabled = false
-        cell.repodesc.isEnabled = false
+        cell.descreption.isEditable = false
          cell.licensename.isEnabled = false
 
         return cell
