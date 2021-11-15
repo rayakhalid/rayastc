@@ -126,12 +126,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 //        self.navigationController?.pushViewController(vc!, animated: true)
 //  test
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-
         let vc: userselectViewController = storyboard.instantiateViewController(withIdentifier: "ViewExperiance") as! userselectViewController
+        vc.loginname = UsersArray[indexPath.row].Username
 
         self.present(vc, animated: true, completion: nil)
         print("selected cell \(indexPath.row)")
-        print("selected cel")
 
     }
 
