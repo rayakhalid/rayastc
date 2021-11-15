@@ -9,6 +9,8 @@ import UIKit
 struct Userdetails {
     var namea:String?
     var descreption:String?
+    var licenseName:String?
+
 }
 class userselectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var repoArray = [Userdetails]()
@@ -55,7 +57,8 @@ print(loginname)
                                  let desc = item.welcomeDescription
                                  print(name1)
                                  print(desc)
-                                 let exp = Userdetails(namea: item.name as? String, descreption: item.welcomeDescription as? String)
+                                 print(item.license?.name)
+                                 let exp = Userdetails(namea: item.name as? String, descreption: item.welcomeDescription as? String, licenseName: item.license?.name as? String)
                                  self.repoArray.append(exp)
                                  print(self.repoArray)
                                  self.tableview.reloadData()} } catch let error  {
@@ -75,10 +78,11 @@ print(loginname)
         let cell = tableView.dequeueReusableCell(withIdentifier: "reposTableViewCell") as! reposTableViewCell
         cell.reponame.text = repoArray[indexPath.row].namea
         cell.repodesc.text = repoArray[indexPath.row].descreption
-        
+         cell.licensename.text = repoArray[indexPath.row].licenseName
         
         cell.reponame.isEnabled = false
         cell.repodesc.isEnabled = false
+         cell.licensename.isEnabled = false
 
         return cell
     }

@@ -111,9 +111,16 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-EQ-G5G">
+                                                    <rect key="frame" x="53" y="26" width="226" height="34"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="licensename" destination="Fwf-EQ-G5G" id="VYN-jh-YvS"/>
                                             <outlet property="repodesc" destination="QM7-8d-DVG" id="sW3-WT-YyC"/>
                                             <outlet property="reponame" destination="bsB-Vn-Gwb" id="fPM-CP-Jqo"/>
                                         </connections>

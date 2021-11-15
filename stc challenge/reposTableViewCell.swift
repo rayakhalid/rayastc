@@ -12,6 +12,7 @@ class reposTableViewCell: UITableViewCell {
     
     @IBOutlet weak var reponame: UITextField!
     @IBOutlet weak var repodesc: UITextField!
+    @IBOutlet weak var licensename: UITextField!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
