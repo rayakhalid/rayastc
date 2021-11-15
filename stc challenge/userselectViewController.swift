@@ -7,12 +7,13 @@
 
 import UIKit
 struct Userdetails {
-    var namea:String
-    var descreption:String
+    var namea:String?
+    var descreption:String?
 }
 class userselectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var repoArray = [Userdetails]()
 
+    @IBOutlet weak var ownername: UITextField!
     var loginname = ""
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var descreption: UITextField!
@@ -24,6 +25,8 @@ class userselectViewController: UIViewController, UITableViewDelegate, UITableVi
         tableview.isUserInteractionEnabled = true
         tableview.allowsSelection = true
 print(loginname)
+        ownername.text = loginname
+        ownername.isEnabled = false
         print("IIII")
         countfollowers()
         // Do any additional setup after loading the view.
@@ -48,22 +51,16 @@ print(loginname)
                          do {
                             let response = try decoder.decode([userdetails].self, from: data)
                              for item in response {
-                                 print("yjfopykkfhkh")
                                 let name1 = item.name
                                  let desc = item.welcomeDescription
                                  print(name1)
                                  print(desc)
-                                 let exp = Userdetails(namea: item.name as! String, descreption: item.welcomeDescription as! String)
+                                 let exp = Userdetails(namea: item.name as? String, descreption: item.welcomeDescription as? String)
                                  self.repoArray.append(exp)
                                  print(self.repoArray)
-                                 self.tableview.reloadData()
-                                
-                             }
-
-                         } catch let error  {
+                                 self.tableview.reloadData()} } catch let error  {
                              print("Parsing Failed \(error.localizedDescription)")
-                         }}} }
-        }.resume()
+                         }}} } }.resume()
     }
     func numberOfSections(in tableView: UITableView) -> Int {
                 return 1
@@ -90,7 +87,7 @@ print(loginname)
 // MARK: - WelcomeElement
 struct userdetails: Codable {
     let id: Int
-    let nodeID, name, fullName, welcomeDescription: String
+    let nodeID, name, fullName, welcomeDescription: String?
 
     enum CodingKeys: String, CodingKey {
         case id
