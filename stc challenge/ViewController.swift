@@ -7,6 +7,7 @@
 
 import UIKit
 
+// for handling the array objects
 struct User {
     var Username:String
     var followersnum:Int
@@ -16,10 +17,9 @@ struct User {
 
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var UsersArray = [User]()
-
+    
     @IBOutlet weak var UsersTableView: UITableView!
-    var count = 0
+    var UsersArray = [User]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +27,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.UsersTableView.dataSource = self
         UsersTableView.isUserInteractionEnabled = true
         UsersTableView.allowsSelection = true
+        
+        // to get the data from Github API
         loadData()
-           }
+          
+    }
    
     func loadData(){
         let urlString = "https://api.github.com/users"
@@ -48,6 +51,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         let decoder = JSONDecoder()
                         do {
                            let response = try decoder.decode([WelcomeElement].self, from: data)
+                            // for each elemnts count the number of followers and repos
                             for item in response {
                                 self.countfollowers(item)
                             }
@@ -61,7 +65,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func countfollowers(_ username: WelcomeElement){
-        print("in count")
+        // use the passed username from the response items
         let urlString = "https://api.github.com/users/\(username.login)"
         guard let url = URL(string: urlString)
                 else { return  }
@@ -74,20 +78,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                             print("Error: \(String(describing: error))")
                         }
                         else if let data = data {
-
                             do{
-                                let json = try JSONDecoder().decode(userc.self, from: data)
+                                let json = try JSONDecoder().decode(userelemnts.self, from: data)
                                 let followersnum = json.followers
                                 let reponum = json.publicRepos
-//                                print(followersnum)
-//                                print(reponum)
-                                print(json.avatarURL)
+                                // create user object and add it to the array
                                 let exp = User(Username: username.login as! String, followersnum: json.followers as! Int, reponum: json.publicRepos as! Int,avatarimage: json.avatarURL as! String)
-
                                 self.UsersArray.append(exp)
-//                                print(self.UsersArray)
                                 self.UsersTableView.reloadData()
-
                             } catch{
                                 print(error)
                             }}}
@@ -103,7 +101,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        // display users cells with the requaired data
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsersTableViewCell") as! UsersTableViewCell
         cell.usernameGithub.text = UsersArray[indexPath.row].Username
         cell.reponumber.text = "\(UsersArray[indexPath.row].reponum)"
@@ -118,22 +116,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.avatar.image = UIImage(data: data)}} }
         // Start Data Task
         dataTask.resume()
-        
         cell.usernameGithub.isEnabled = false
         cell.reponumber.isEnabled = false
         cell.followersnumber.isEnabled = false
-
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//  test
+        // redirect the user to new page if select the user to see more information
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc: userselectViewController = storyboard.instantiateViewController(withIdentifier: "ViewExperiance") as! userselectViewController
         vc.loginname = UsersArray[indexPath.row].Username
-
         self.present(vc, animated: true, completion: nil)
         print("selected cell \(indexPath.row)")
-
     }
 
     
@@ -143,7 +137,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 self.UsersTableView.reloadData()
             } }
         }}
-
+// to conver json data to swift 
 // MARK: - WelcomeElement
 struct WelcomeElement: Codable {
     let login: String
@@ -190,7 +184,7 @@ typealias Welcome = [WelcomeElement]
 
 
 // MARK: - Welcome
-struct userc: Codable {
+struct userelemnts: Codable {
     let login: String
     let id: Int?
     let nodeID: String?

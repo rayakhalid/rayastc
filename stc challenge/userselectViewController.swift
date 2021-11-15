@@ -6,6 +6,8 @@
 //
 
 import UIKit
+
+// for handling the array objects
 struct Userdetails {
     var namea:String?
     var descreption:String?
@@ -26,16 +28,13 @@ class userselectViewController: UIViewController, UITableViewDelegate, UITableVi
         self.tableview.dataSource = self
         tableview.isUserInteractionEnabled = true
         tableview.allowsSelection = true
-print(loginname)
         ownername.text = loginname
         ownername.isEnabled = false
-        print("IIII")
-        countfollowers()
+        getrepositories()
         // Do any additional setup after loading the view.
     }
     
-    func countfollowers(){
-        print("in count")
+    func getrepositories(){
         let urlString = "https://api.github.com/users/\(self.loginname)/repos"
         guard let url = URL(string: urlString)
                 else { return  }
@@ -52,16 +51,15 @@ print(loginname)
                          let decoder = JSONDecoder()
                          do {
                             let response = try decoder.decode([userdetails].self, from: data)
+                             // for each elemnts get the name and descreption and license
                              for item in response {
                                 let name1 = item.name
                                  let desc = item.welcomeDescription
-                                 print(name1)
-                                 print(desc)
-                                 print(item.license?.name)
+                                 // create Userdetails object and add it to the array
                                  let exp = Userdetails(namea: item.name as? String, descreption: item.welcomeDescription as? String, licenseName: item.license?.name as? String)
                                  self.repoArray.append(exp)
-                                 print(self.repoArray)
-                                 self.tableview.reloadData()} } catch let error  {
+                                 self.tableview.reloadData()}
+                         } catch let error  {
                              print("Parsing Failed \(error.localizedDescription)")
                          }}} } }.resume()
     }
@@ -74,20 +72,18 @@ print(loginname)
     }
     
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+         // display user repos cells with the requaired data
         let cell = tableView.dequeueReusableCell(withIdentifier: "reposTableViewCell") as! reposTableViewCell
         cell.reponame.text = repoArray[indexPath.row].namea
         cell.descreption.text = repoArray[indexPath.row].descreption
          cell.licensename.text = repoArray[indexPath.row].licenseName
-        
         cell.reponame.isEnabled = false
         cell.descreption.isEditable = false
          cell.licensename.isEnabled = false
-
         return cell
     }
 }
-
+// to conver json data to swift
 // MARK: - WelcomeElement
 struct userdetails: Codable {
     let id: Int

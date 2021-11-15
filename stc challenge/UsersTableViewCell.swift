@@ -10,10 +10,12 @@ import UIKit
 import TextFieldEffects
 
 class UsersTableViewCell: UITableViewCell {
+    // this is the user table view cell elemnts
     @IBOutlet weak var reponumber: UITextField!
     @IBOutlet weak var usernameGithub: UITextField!
     @IBOutlet weak var followersnumber: UITextField!
     @IBOutlet weak var avatar: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -21,7 +23,6 @@ class UsersTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 

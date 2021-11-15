@@ -19,8 +19,6 @@
 		EFECDB0F274171E300B05582 /* stc_challengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB0E274171E300B05582 /* stc_challengeTests.swift */; };
 		EFECDB19274171E300B05582 /* stc_challengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB18274171E300B05582 /* stc_challengeUITests.swift */; };
 		EFECDB1B274171E300B05582 /* stc_challengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB1A274171E300B05582 /* stc_challengeUITestsLaunchTests.swift */; };
-		EFECDB2A2741AAB200B05582 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB292741AAB200B05582 /* Service.swift */; };
-		EFECDB2E2741AB6B00B05582 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB2D2741AB6B00B05582 /* Results.swift */; };
 		EFECDB342741E03100B05582 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB332741E03100B05582 /* UsersTableViewCell.swift */; };
 		EFECDB762742AC1900B05582 /* userselectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB752742AC1900B05582 /* userselectViewController.swift */; };
 		EFECDB782742BC1500B05582 /* reposTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFECDB772742BC1500B05582 /* reposTableViewCell.swift */; };
@@ -66,8 +64,6 @@
 		EFECDB14274171E300B05582 /* stc challengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "stc challengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFECDB18274171E300B05582 /* stc_challengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stc_challengeUITests.swift; sourceTree = "<group>"; };
 		EFECDB1A274171E300B05582 /* stc_challengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stc_challengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		EFECDB292741AAB200B05582 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
-		EFECDB2D2741AB6B00B05582 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		EFECDB332741E03100B05582 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		EFECDB752742AC1900B05582 /* userselectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userselectViewController.swift; sourceTree = "<group>"; };
 		EFECDB772742BC1500B05582 /* reposTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reposTableViewCell.swift; sourceTree = "<group>"; };
@@ -155,8 +151,6 @@
 				EFECDB752742AC1900B05582 /* userselectViewController.swift */,
 				EFECDB332741E03100B05582 /* UsersTableViewCell.swift */,
 				EFECDB772742BC1500B05582 /* reposTableViewCell.swift */,
-				EFECDB292741AAB200B05582 /* Service.swift */,
-				EFECDB2D2741AB6B00B05582 /* Results.swift */,
 				EFECDAFD274171DE00B05582 /* Main.storyboard */,
 				EFECDB00274171E200B05582 /* Assets.xcassets */,
 				EFECDB02274171E200B05582 /* LaunchScreen.storyboard */,
@@ -421,10 +415,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFECDB2E2741AB6B00B05582 /* Results.swift in Sources */,
 				EFECDAFC274171DE00B05582 /* ViewController.swift in Sources */,
 				EFECDB342741E03100B05582 /* UsersTableViewCell.swift in Sources */,
-				EFECDB2A2741AAB200B05582 /* Service.swift in Sources */,
 				EFECDAF8274171DE00B05582 /* AppDelegate.swift in Sources */,
 				EFECDAFA274171DE00B05582 /* SceneDelegate.swift in Sources */,
 				EFECDB762742AC1900B05582 /* userselectViewController.swift in Sources */,
