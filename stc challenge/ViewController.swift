@@ -116,17 +116,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(identifier: "ViewExperiance") as? ViewController
-//        vc?.expTitle = experienceArray[indexPath.row].expTitle
-        // testing print
-        
-//        print(experienceArray[indexPath.row].expID ,"   ##########################")
+//        let vc = storyboard?.instantiateViewController(identifier: "ViewExperiance") as? userselectViewController
+////        vc?.expTitle = experienceArray[indexPath.row].expTitle
+//        // testing print
+//
+////        print(experienceArray[indexPath.row].expID ,"   ##########################")
+//
+//
+//        self.navigationController?.pushViewController(vc!, animated: true)
+//
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
 
-        
-        self.navigationController?.pushViewController(vc!, animated: true)
-        
-        
-        
+        let vc: userselectViewController = storyboard.instantiateViewController(withIdentifier: "ViewExperiance") as! userselectViewController
+
+        self.present(vc, animated: true, completion: nil)
         print("selected cell \(indexPath.row)")
     }
 

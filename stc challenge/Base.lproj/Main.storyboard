@@ -80,6 +80,21 @@
             </objects>
             <point key="canvasLocation" x="295.6521739130435" y="78.348214285714278"/>
         </scene>
+        <!--Userselect View Controller-->
+        <scene sceneID="w5T-18-4Zd">
+            <objects>
+                <viewController storyboardIdentifier="ViewExperiance" id="BFC-GV-3Qc" customClass="userselectViewController" customModule="stc_challenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="McA-T2-WxL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="P3D-HG-IWr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2f-fZ-Ft9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="170"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
