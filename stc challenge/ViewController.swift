@@ -20,17 +20,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var UsersTableView: UITableView!
     var UsersArray = [User]()
-
+    var indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.UsersTableView.delegate = self
         self.UsersTableView.dataSource = self
         UsersTableView.isUserInteractionEnabled = true
         UsersTableView.allowsSelection = true
-        
+        indicator.frame = CGRect(x: 0.0, y: 0.0, width: 40.0, height: 40.0)
+        indicator.center = view.center
+        view.addSubview(indicator)
+        indicator.bringSubviewToFront(view)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        indicator.startAnimating()
         // to get the data from Github API
         loadData()
-          
+
     }
    
     func loadData(){
@@ -119,6 +125,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.usernameGithub.isEnabled = false
         cell.reponumber.isEnabled = false
         cell.followersnumber.isEnabled = false
+        indicator.stopAnimating()
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

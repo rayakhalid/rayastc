@@ -16,6 +16,7 @@ struct Userdetails {
 }
 class userselectViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var repoArray = [Userdetails]()
+    var indicator: UIActivityIndicatorView = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.gray)
 
     @IBOutlet weak var ownername: UITextField!
     var loginname = ""
@@ -30,7 +31,15 @@ class userselectViewController: UIViewController, UITableViewDelegate, UITableVi
         tableview.allowsSelection = true
         ownername.text = loginname
         ownername.isEnabled = false
+    
+        indicator.frame = CGRect(x: 0.0, y: 0.0, width: 40.0, height: 40.0)
+        indicator.center = view.center
+        view.addSubview(indicator)
+        indicator.bringSubviewToFront(view)
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        indicator.startAnimating()
         getrepositories()
+
         // Do any additional setup after loading the view.
     }
     
@@ -80,6 +89,7 @@ class userselectViewController: UIViewController, UITableViewDelegate, UITableVi
         cell.reponame.isEnabled = false
         cell.descreption.isEditable = false
          cell.licensename.isEnabled = false
+         self.indicator.stopAnimating()
         return cell
     }
 }
