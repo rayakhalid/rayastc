@@ -11,6 +11,7 @@ struct User {
     var Username:String
     var followersnum:Int
     var reponum:Int
+    var avatarimage: String
 }
 
 
@@ -81,10 +82,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                                 let reponum = json.publicRepos
 //                                print(followersnum)
 //                                print(reponum)
-                                let exp = User(Username: username.login as! String, followersnum: json.followers as! Int, reponum: json.publicRepos as! Int)
+                                print(json.avatarURL)
+                                let exp = User(Username: username.login as! String, followersnum: json.followers as! Int, reponum: json.publicRepos as! Int,avatarimage: json.avatarURL as! String)
 
                                 self.UsersArray.append(exp)
-                                print(self.UsersArray)
+//                                print(self.UsersArray)
                                 self.UsersTableView.reloadData()
 
                             } catch{
@@ -107,7 +109,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.usernameGithub.text = UsersArray[indexPath.row].Username
         cell.reponumber.text = "\(UsersArray[indexPath.row].reponum)"
         cell.followersnumber.text = "\(UsersArray[indexPath.row].followersnum)"
-        
+        // Create URL
+        let url = URL(string: UsersArray[indexPath.row].avatarimage)!
+        // Create Data Task
+        let dataTask = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
+            if let data = data {
+                DispatchQueue.main.async {
+                    // Create Image and Update Image View
+                    cell.avatar.image = UIImage(data: data)}} }
+        // Start Data Task
+        dataTask.resume()
         
         cell.usernameGithub.isEnabled = false
         cell.reponumber.isEnabled = false
@@ -116,14 +127,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let vc = storyboard?.instantiateViewController(identifier: "ViewExperiance") as? userselectViewController
-////        vc?.expTitle = experienceArray[indexPath.row].expTitle
-//        // testing print
-//
-////        print(experienceArray[indexPath.row].expID ,"   ##########################")
-//
-//
-//        self.navigationController?.pushViewController(vc!, animated: true)
 //  test
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc: userselectViewController = storyboard.instantiateViewController(withIdentifier: "ViewExperiance") as! userselectViewController
@@ -139,11 +142,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         DispatchQueue.global(qos: .userInitiated).async {
             DispatchQueue.main.async {
                 self.UsersTableView.reloadData()
-            }
-        }
-
-
-
+            } }
         }}
 
 // MARK: - WelcomeElement

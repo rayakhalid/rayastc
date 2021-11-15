@@ -88,14 +88,24 @@ print(loginname)
 struct userdetails: Codable {
     let id: Int
     let nodeID, name, fullName, welcomeDescription: String?
+    let license: License?
 
     enum CodingKeys: String, CodingKey {
         case id
         case nodeID = "node_id"
         case name
+        case license
         case fullName = "full_name"
         case welcomeDescription = "description"
     }
 }
+
+// MARK: - License
+struct License: Codable {
+    let key, name: String?
+    enum CodingKeys: String, CodingKey {
+        case key, name
+    }}
+
 
 
